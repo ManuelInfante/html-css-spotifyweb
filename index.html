@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- / Import Google font: Montserrat -->
+
+    <!-- Import Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- Import Font Awesome -->
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify | Web-app</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -18,13 +22,13 @@
         <main>
           <!-- Barra laterale di sinistra -->
             <aside id="aside_menu" class="float_sx">
-              <nav class="top_nav">
+              <nav class="top_nav flex">
                 <div class="logo">
                   <img src="img/logo.svg" alt="Logo Spotify">
                 </div>
 
                 <ul class="site_menu">
-                  <li>
+                  <li class="active">
                     <a href="#">
                       <img src="img/home.svg" alt="">
 
@@ -110,13 +114,80 @@
 
             <!-- Libreria canzoni -->
             <section id="content" class="float_sx">
+              <div id="cta flex">
+                <button>
+                  <a href="">effettua l'upgrade</a>
+                </button>
+              </div>
 
+              <nav>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </nav>
+              
             </section>
             <!-- Libreria canzoni -->
         </main>
 
-        <footer>
-          
+        <footer class="flex">
+          <section class="side song_data flex">
+
+            <div class="song_cover flex">
+              <img src="img/sinister.jpeg" alt="">
+
+              <div class="flex">
+                <h4>Sinister</h4>
+
+                <p>Brano Nome</p>
+              </div>
+            </div>
+
+            <div class="song_actions flex">
+              <i class="far fa-heart"></i>
+
+              <i class="far fa-folder"></i>
+            </div>
+          </section>
+
+          <section class="song_player flex">
+            <div class="player_commands flex">
+              <i class="pointer fas fa-random"></i>
+              <i class="pointer fas fa-step-backward"></i>
+              <i class="pointer far fa-play-circle"></i>
+              <i class="pointer fas fa-step-forward"></i>
+              <i class="pointer fas fa-redo-alt"></i>
+            </div>
+
+            <div class="player_bar flex">
+              <span>0:25</span>
+
+              <div class="full_bar">
+                <div class="bullet"></div>
+              </div>
+
+              <span>4:35</span>
+            </div>
+          </section>
+
+          <section class="side song_commands flex">
+            <div class="source_options flex">
+              <i class="pointer fas fa-list"></i>
+              <i class="pointer fas fa-desktop"></i>
+              <i class="pointer fas fa-volume-up"></i>
+            </div>
+
+            <div class="player_bar flex">
+              <div class="full_bar">
+                <div class="bullet"></div>
+              </div>
+            </div>
+          </section>
         </footer>
     </div>
 </body>
