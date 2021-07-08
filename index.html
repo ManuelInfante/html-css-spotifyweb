@@ -18,177 +18,342 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="wrapper">
-        <main>
-          <!-- Barra laterale di sinistra -->
-            <aside id="aside_menu" class="float_sx">
-              <nav class="top_nav flex">
-                <div class="logo">
-                  <img src="img/logo.svg" alt="Logo Spotify">
+  <div class="wrapper">
+    <main>
+      <!-- Barra laterale di sinistra -->
+      <aside id="aside_menu" class="float_sx">
+        <nav class="top_nav flex">
+          <div class="logo">
+            <img src="img/logo.svg" alt="Logo Spotify">
+          </div>
+
+          <ul class="site_menu">
+            <li class="active">
+              <a href="#">
+                <img src="img/home.svg" alt="">
+
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="img/search.svg" alt="">
+
+                <span>Cerca</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="img/libreria.svg" alt="">
+
+                <span>La tua libreria</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="new_playlist_box">
+            <li>
+              <h3 class="white_text">Playlist</h3>
+            </li>
+
+            <li class="flex">
+              <span id="new_playlist" class="pointer">+</span>
+              
+              <a href="">Crea Playlist</a>
+            </li>
+          </ul>
+
+          <ul class="playlist_nav">
+            <li>
+              <a href="">Nome Playlist</a>
+              
+              <a href="">Nome Playlist</a>
+
+              <a href="">Nome Playlist</a>
+
+              <a href="">Nome Playlist</a>
+
+              <a href="">Nome Playlist</a>
+
+              <a href="">Nome Playlist</a>
+
+              <a href="">Nome Playlist</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="bottom_nav">
+          <ul class="flex"> 
+            <li>
+              <a href="">
+                <img src="img/download.svg" alt="">
+
+                <span href="">Installa app</span>
+              </a>
+            </li>
+              
+            <li>
+              <hr>
+            </li>
+
+            <li class="flex">
+              <a href="" class="flex"></a>
+                <div>
+                  <img src="img/profile.svg" alt="Profile Img">
                 </div>
 
-                <ul class="site_menu">
-                  <li class="active">
-                    <a href="#">
-                      <img src="img/home.svg" alt="">
+                <span href="">Jhon Doe</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- Fine Barra laterale di sinistra -->
 
-                      <span>Home</span>
-                    </a>
-                  </li>
+      <!-- Libreria canzoni -->
+      <section id="content" class="float_sx">
+        <div id="cta" class="flex">
+          <button>
+            <a href="">Effettua l'upgrade</a>
+          </button>
+        </div>
 
-                  <li>
-                    <a href="#">
-                      <img src="img/search.svg" alt="">
+        <div class="container">
+          <nav>
+            <ul class="flex">
+              <li class="active flex">
+                <a href="">In evidenza</a>
 
-                      <span>Cerca</span>
-                    </a>
-                  </li>
+                <div class="nav_decoration"></div>
+              </li>
 
-                  <li>
-                    <a href="#">
-                      <img src="img/libreria.svg" alt="">
+              <li class="flex">
+                <a href="">Podcast</a>
 
-                      <span>La tua libreria</span>
-                    </a>
-                  </li>
-                </ul>
+                <div class="nav_decoration"></div>
+              </li>
 
-                <ul>
-                  <li>
-                    <h3 class="white_text">Playlist</h3>
-                  </li>
+              <li class="flex">
+                <a href="">Classifiche</a>
 
-                  <li class="flex">
-                    <span id="new_playlist" class="pointer">+</span>
-                    
-                    <a href="">Crea Playlist</a>
-                  </li>
-                </ul>
+                <div class="nav_decoration"></div>
+              </li>
 
-                <ul class="playlist_nav">
-                  <li>
-                    <a href="">Nome Playlist</a>
-                    
-                    <a href="">Nome Playlist</a>
+              <li class="flex">
+                <a href="">Generi e mood</a>
 
-                    <a href="">Nome Playlist</a>
+                <div class="nav_decoration"></div>
+              </li>
 
-                    <a href="">Nome Playlist</a>
+              <li class="flex">
+                <a href="">Nuove uscite</a>
 
-                    <a href="">Nome Playlist</a>
+                <div class="nav_decoration"></div>
+              </li>
 
-                    <a href="">Nome Playlist</a>
+              <li class="flex">
+                <a href="">Scopri</a>
 
-                    <a href="">Nome Playlist</a>
-                  </li>
-                </ul>
-              </nav>
+                <div class="nav_decoration"></div>
+              </li>
+            </ul>
+          </nav>
+          <!-- LIBRERIA ASCOLTATI DI RECENTE-->
+          <section id="recently">
+            <h2>Recently played</h2>
 
-              <nav class="bottom_nav">
-                <ul class="flex"> 
-                  <li>
-                    <a href="">
-                      <img src="img/download.svg" alt="">
+            <div class="column_boxes flex">
 
-                      <span href="">Installa app</span>
-                    </a>
-                  </li>
-                    
-                  <li>
-                    <hr>
-                  </li>
+              <div class="column flex pointer">
+                <div class="image_box">
+                  <img src="img/metal_lifting.jpg" alt="">
+                  
+                  <i class="far fa-play-circle"></i>
+                </div>
 
-                  <li>
-                    <a class="flex" href="">
-                      <div>
-                        <img src="img/profile.svg" alt="Profile Img">
-                      </div>
-
-                      <span href="">Jhon Doe</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </aside>
-            <!-- Fine Barra laterale di sinistra -->
-
-            <!-- Libreria canzoni -->
-            <section id="content" class="float_sx">
-              <div id="cta flex">
-                <button>
-                  <a href="">effettua l'upgrade</a>
-                </button>
+                <h3>Heavy metal</h3>
+                <p>subtitle</p>
               </div>
 
-              <nav>
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </nav>
-              
-            </section>
-            <!-- Libreria canzoni -->
-        </main>
+              <div class="column flex pointer">
+                <div class="image_box">
+                  <img src="img/stranger.jpeg" alt="">
+                  
+                  <i class="far fa-play-circle"></i>
+                </div>
 
-        <footer class="flex">
-          <section class="side song_data flex">
-
-            <div class="song_cover flex">
-              <img src="img/sinister.jpeg" alt="">
-
-              <div class="flex">
-                <h4>Sinister</h4>
-
-                <p>Brano Nome</p>
-              </div>
-            </div>
-
-            <div class="song_actions flex">
-              <i class="far fa-heart"></i>
-
-              <i class="far fa-folder"></i>
-            </div>
-          </section>
-
-          <section class="song_player flex">
-            <div class="player_commands flex">
-              <i class="pointer fas fa-random"></i>
-              <i class="pointer fas fa-step-backward"></i>
-              <i class="pointer far fa-play-circle"></i>
-              <i class="pointer fas fa-step-forward"></i>
-              <i class="pointer fas fa-redo-alt"></i>
-            </div>
-
-            <div class="player_bar flex">
-              <span>0:25</span>
-
-              <div class="full_bar">
-                <div class="bullet"></div>
+                <h3>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                <p>Kyle Dixon & Micheal Stein</p>
               </div>
 
-              <span>4:35</span>
-            </div>
-          </section>
+              <div class="column flex pointer">
+                <div class="image_box">
+                  <img src="img/aquietplace.jpeg" alt="">
+                  
+                  <i class="far fa-play-circle"></i>
+                </div>
 
-          <section class="side song_commands flex">
-            <div class="source_options flex">
-              <i class="pointer fas fa-list"></i>
-              <i class="pointer fas fa-desktop"></i>
-              <i class="pointer fas fa-volume-up"></i>
-            </div>
+                <h3>A quiet place</h3>
+                <p>subtitle</p>
+              </div>
 
-            <div class="player_bar flex">
-              <div class="full_bar">
-                <div class="bullet"></div>
+              <div class="column flex pointer">
+                <div class="image_box">
+                  <img src="img/split.jpeg" alt="">
+                  
+                  <i class="far fa-play-circle"></i>
+                </div>
+
+                <h3>Split</h3>
+                <p>subtitle</p>
+              </div>
+
+              <div class="column flex pointer">
+                <div class="image_box">
+                  <img src="img/cure.jpeg" alt="">
+                  
+                  <i class="far fa-play-circle"></i>
+                </div>
+
+                <h3>A cure for wellness</h3>
+                <p>subtitle</p>
+              </div>
+
+              <div class="column flex pointer">
+                <div class="image_box">
+                  <img src="img/sinister.jpeg" alt="">
+                  
+                  <i class="far fa-play-circle"></i>
+                </div>
+
+                <h3>Sinister</h3>
+                <p>subtitle</p>
               </div>
             </div>
           </section>
-        </footer>
-    </div>
+          <!-- / LIBRERIA ASCOLTATI DI RECENTE-->
+
+          <!-- LIBRERIA CONSIGLIATI PER ME -->
+          
+          <section id="for_me">
+            <h2>Creato per John Doe</h2>
+            <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+
+            <div class="column_boxes flex">
+
+              <div class="column flex pointer">
+                <div class="image_box">
+                  <img src="img/radar.jpeg" alt="">
+                  
+                  <i class="far fa-play-circle"></i>
+                </div>
+
+                <h3>Release Radar</h3>
+              </div>
+
+              <div class="column flex pointer">
+                <div class="image_box">
+                  <img src="img/mixdaily.jpeg" alt="">
+                  
+                  <i class="far fa-play-circle"></i>
+                </div>
+
+                <h3>Daily Mix 1</h3>
+              </div>
+            </div>
+          </section>
+          <!-- / LIBRERIA CONSIGLIATI PER ME -->
+
+          <!-- ARTISTI CONSIGLIATI -->
+          <section id="artists">
+            <h2>Artisti più popolari</h2>
+            <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+
+            <div class="column_boxes flex">
+
+              <div class="column flex pointer">
+                <div class="image_box rounded">
+                  <img src="img/youg.jpeg" alt="">
+                  
+                  <i class="far fa-play-circle"></i>
+                </div>
+
+                <h3>Lana Del Rey</h3>
+              </div>
+
+              <div class="column flex pointer">
+                <div class="image_box rounded">
+                  <img src="img/einaudi.jpeg" alt="">
+                  
+                  <i class="far fa-play-circle"></i>
+                </div>
+
+                <h3>Ludovico Einaudi</h3>
+              </div>
+            </div>
+          </section>
+          <!-- / ARTISTI CONSIGLIATI -->
+        </div>
+      </section>
+      <!-- Libreria canzoni -->
+    </main>
+
+    <footer class="flex">
+      <section class="side song_data flex">
+
+        <div class="song_cover flex">
+          <img src="img/sinister.jpeg" alt="">
+
+          <div class="flex">
+            <h4>Sinister</h4>
+
+            <p>Brano Nome</p>
+          </div>
+        </div>
+
+        <div class="song_actions flex">
+          <i class="far fa-heart"></i>
+
+          <i class="far fa-folder"></i>
+        </div>
+      </section>
+
+      <section class="song_player flex">
+        <div class="player_commands flex">
+          <i class="pointer fas fa-random"></i>
+          <i class="pointer fas fa-step-backward"></i>
+          <i class="pointer far fa-play-circle"></i>
+          <i class="pointer fas fa-step-forward"></i>
+          <i class="pointer fas fa-redo-alt"></i>
+        </div>
+
+        <div class="player_bar flex">
+          <span>0:25</span>
+
+          <div class="full_bar">
+            <div class="bullet"></div>
+          </div>
+
+          <span>4:35</span>
+        </div>
+      </section>
+
+      <section class="side song_commands flex">
+        <div class="source_options flex">
+          <i class="pointer fas fa-list"></i>
+          <i class="pointer fas fa-desktop"></i>
+          <i class="pointer fas fa-volume-up"></i>
+        </div>
+
+        <div class="player_bar flex">
+          <div class="full_bar">
+            <div class="bullet"></div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </div>
 </body>
 </html>
