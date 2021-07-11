@@ -62,6 +62,11 @@ main{
   padding: 8px 20px;
 }
 
+#aside_menu > nav > ul > li.flex{
+  justify-content: flex-start;
+  align-items: center;
+}
+
 #aside_menu > nav > ul > li > a{
   text-decoration: none;
   font-size: 1vw;
@@ -83,6 +88,8 @@ main{
 
 #aside_menu > nav > ul > li > span{
   vertical-align: middle;
+  color: white;
+  font-size: 1vw;
 }
 
   /* NAV TOP */
@@ -100,6 +107,11 @@ main{
 
   #aside_menu > nav.top_nav > div.logo > img[alt="Logo Spotify"]{
     width: 70%;
+  }
+
+  #aside_menu > nav.top_nav > div.logo > img[alt="Logo Spotify Small"]{
+    width: 60%;
+    display: none;
   }
 
   #aside_menu > nav.top_nav > ul.site_menu{
@@ -171,6 +183,12 @@ main{
     width: 100%;
   }
 
+  #aside_menu > nav.bottom_nav.flex{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
   #aside_menu > nav.bottom_nav > ul.flex{
     height: 100%;
     width: 100%;
@@ -178,17 +196,17 @@ main{
     justify-content: space-around;
   }
 
-  #aside_menu > nav.bottom_nav > ul.flex > li > a.flex{
+  #aside_menu > nav.bottom_nav > ul.flex > li > a{
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   #aside_menu > nav.bottom_nav > ul.flex > li > a > img{
     margin-right: 10px;
   }
 
-  #aside_menu > nav.bottom_nav > ul.flex > li > a.flex > div{
+  #aside_menu > nav.bottom_nav > ul.flex > li > a > div#profile_img_box{
     height: 30px;
     width: 30px;
     background-color: gray;
@@ -197,14 +215,14 @@ main{
     margin-right: 10px;
   }
 
-  #aside_menu > nav.bottom_nav > ul.flex > li > a.flex > div > img[alt="Profile Img"]{
+  #aside_menu > nav.bottom_nav > ul.flex > li > a > div > img[alt="Profile Img"]{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top;
   }
 
-  #aside_menu > nav.bottom_nav > ul.flex > li > a.flex > span{
+  #aside_menu > nav.bottom_nav > ul.flex > li > a > span{
     color: white;
     font-weight: 700;
   }
@@ -607,7 +625,7 @@ footer > section.side{
 
 /* @media querys */
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 992px){
   #content > div.container > section > div.column_boxes > div.column{
     margin: 0 5px;
     width: calc((100% / 4) - 10px);
@@ -666,9 +684,13 @@ footer > section.side{
     margin-bottom: 20px;
   }
 
+  #aside_menu > nav > ul > li > span{
+    font-size: 2vw;
+  }
+
 }
 
-@media only screen and (max-width: 660px){
+@media only screen and (max-width: 768px){
   #content > div.container > section > div.column_boxes > div.column{
     margin: 0 2.5px;
     width: calc((100% / 2) - 5px);
@@ -721,10 +743,18 @@ footer > section.side{
 
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 576px){
+
+  #aside_menu > nav.top_nav > ul.site_menu > li {
+    text-align: center;
+  }
+
+  #aside_menu > nav > ul > li > a{
+    text-align: center;
+  }
+
   #aside_menu > nav > ul > li > a > img{
-    width: 90%;
-    vertical-align: middle;
+    width: 50%;
   }
   
   #aside_menu span{
@@ -743,7 +773,7 @@ footer > section.side{
     padding: 0 0;
   }
 
-  #aside_menu > nav.bottom_nav > ul.flex > li > a.flex{
+  #aside_menu > nav.bottom_nav > ul.flex > li > a{
     flex-direction: row;
     justify-content: center;
   }
@@ -780,7 +810,7 @@ footer > section.side{
   }
   
   #content > div.container > section > h2{
-    font-size: 3vw;
+    font-size: 5vw;
   }
 
   #content > div.container > section > p{
@@ -793,17 +823,70 @@ footer > section.side{
 
   #content > div.container > nav > ul > li > a{
    line-height: 40px;
-   font-size: 1.8vw;
+   font-size: 3vw;
   }
 
   #content > div.container > section > div.column_boxes > div.column > h3{
-    font-size: 1.7vw;
+    font-size: 3vw;
     margin: 20px 0 1px;
   }
 
   #content > div.container > section > div.column_boxes > div.column > p{
-    font-size: 1.3vw;
+    font-size: 2.5vw;
     margin-bottom: 20px;
   }
+
+  #aside_menu > nav.bottom_nav > ul.flex > li{
+    justify-content: center;
+  }
+
+  #aside_menu > nav.bottom_nav > ul.flex > li > a > div#profile_img_box{
+    height: 40px;
+    width: 40px;
+    margin-bottom: 25px;
+    margin-right: 0;
+  }
+
+  #aside_menu > nav.top_nav {
+    min-height: 0;
+  }
+
+  #aside_menu > nav.top_nav > div.logo > img[alt="Logo Spotify"]{
+    display: none;
+  }
+
+  #aside_menu > nav.top_nav > div.logo > img[alt="Logo Spotify Small"]{
+    width: 100%;
+    display: inline-block;
+  }
+
+  #aside_menu > nav.top_nav > div.logo {
+    padding: 15px;
+  }
+
+  #content > div#cta.flex {
+    display: none;
+  }
+
+  #content > div.container > nav {
+    padding: 20px 10px 30px;
+  }
+
+  #content > div.container > nav > ul.flex {
+    justify-content: space-between;
+    align-items:stretch;
+    flex-wrap: wrap;
+  }
+
+  footer > section.song_data > div.song_cover > div.flex {
+    display: none;
+  }
+
+  footer > section.song_data div.song_actions.flex {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 }
 /* @media querys */
